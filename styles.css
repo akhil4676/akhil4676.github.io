@@ -4,29 +4,36 @@ body {
     background-color: #0d0d0d;
     color: #ffffff;
     scroll-behavior: smooth;
+    display: flex;
+    justify-content: center;
+    padding: 40px 0;
+  }
+  
+  .container {
+    background-color: #121212;
+    border: 1px solid #333;
+    border-radius: 20px;
+    max-width: 1000px;
+    width: 90%;
+    padding: 20px 40px;
+    box-shadow: 0 0 20px rgba(255, 0, 0, 0.2);
   }
   
   nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #1a1a1a;
-    padding: 20px 40px;
-    position: sticky;
-    top: 0;
-    z-index: 999;
-    box-shadow: 0 4px 8px rgba(255, 0, 0, 0.1);
+    margin-bottom: 40px;
   }
   
   .logo {
     font-family: 'Orbitron', sans-serif;
-    font-size: 1.6rem;
+    font-size: 1.5rem;
     color: red;
-    font-weight: bold;
   }
   
   .nav-links a {
-    margin-left: 25px;
+    margin-left: 20px;
     color: white;
     text-decoration: none;
     position: relative;
@@ -37,7 +44,7 @@ body {
     position: absolute;
     width: 0%;
     height: 2px;
-    bottom: -5px;
+    bottom: -4px;
     left: 0;
     background-color: red;
     transition: 0.3s ease;
@@ -49,23 +56,24 @@ body {
   
   .hero {
     text-align: center;
-    padding: 120px 20px;
-    background: linear-gradient(to bottom right, #000000, #1a0000);
+    margin-bottom: 50px;
   }
   
   .hero h1 {
-    font-size: 3rem;
+    font-size: 2.8rem;
     color: red;
-    margin-bottom: 10px;
   }
   
   .hero p {
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     color: #ccc;
   }
   
-  .btn {
+  .center-btn {
     margin-top: 20px;
+  }
+  
+  .btn {
     padding: 12px 30px;
     background-color: red;
     color: #fff;
@@ -73,6 +81,7 @@ body {
     border-radius: 30px;
     font-weight: bold;
     transition: background 0.3s;
+    display: inline-block;
   }
   
   .btn:hover {
@@ -80,36 +89,33 @@ body {
   }
   
   section {
-    padding: 60px 30px;
-    max-width: 900px;
-    margin: auto;
+    margin-bottom: 60px;
   }
   
   h2 {
     color: red;
-    margin-bottom: 20px;
     font-family: 'Orbitron', sans-serif;
+    margin-bottom: 20px;
   }
   
   .project, .job {
-    margin-bottom: 25px;
-    background-color: #1a1a1a;
+    background-color: #1e1e1e;
     padding: 20px;
     border-radius: 10px;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin-top: 15px;
+    transition: transform 0.3s, box-shadow 0.3s;
   }
   
   .project:hover, .job:hover {
     transform: translateY(-5px);
-    box-shadow: 0 0 20px rgba(255, 0, 0, 0.3);
+    box-shadow: 0 0 15px rgba(255, 0, 0, 0.2);
   }
   
   footer {
-    background: #1a1a1a;
     text-align: center;
-    padding: 20px;
-    color: #777;
-    margin-top: 40px;
+    padding: 20px 0;
+    color: #999;
+    border-top: 1px solid #333;
   }
   
   a {
