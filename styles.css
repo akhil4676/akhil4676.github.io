@@ -7,8 +7,6 @@ body {
   display: flex;
   justify-content: center;
   padding: 40px 0;
-  position: relative;
-  overflow-x: hidden;
 }
 
 .container {
@@ -19,7 +17,6 @@ body {
   width: 90%;
   padding: 20px 40px;
   box-shadow: 0 0 20px rgba(255, 0, 0, 0.2);
-  z-index: 2;
 }
 
 nav {
@@ -141,17 +138,17 @@ a:hover {
   font-style: italic;
 }
 
-/* Pixel Human Animation */
+/* === Pixel Human Animation === */
 .pixel-human {
   position: fixed;
   bottom: 10px;
   left: -60px;
   width: 48px;
   height: 48px;
-  background: url('https://i.imgur.com/M1FnzKO.png') no-repeat;
-  background-size: contain;
-  animation: walk 20s linear infinite;
-  z-index: 1;
+  background: url('https://i.imgur.com/NzMtqsG.png') left center;
+  background-size: 384px 48px; /* 8 frames, each 48px wide */
+  animation: walk 20s linear infinite, walk-cycle 1s steps(8) infinite;
+  z-index: 10;
 }
 
 @keyframes walk {
@@ -159,21 +156,7 @@ a:hover {
   100% { left: 100vw; }
 }
 
-/* Rocket Animation */
-.rocket {
-  position: fixed;
-  right: 20px;
-  bottom: 0;
-  width: 48px;
-  height: 96px;
-  background: url('https://i.imgur.com/NbRS3ke.png') no-repeat center;
-  background-size: contain;
-  animation: launch 8s ease-in-out infinite;
-  z-index: 1;
-}
-
-@keyframes launch {
-  0% { transform: translateY(0); opacity: 1; }
-  40% { opacity: 1; }
-  100% { transform: translateY(-120vh); opacity: 0; }
+@keyframes walk-cycle {
+  0% { background-position: 0px; }
+  100% { background-position: -384px; }
 }
