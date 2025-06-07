@@ -24,7 +24,7 @@ header {
   margin-top: 0.5rem;
 }
 
-.projects {
+section {
   margin-bottom: 3rem;
 }
 
@@ -33,6 +33,12 @@ h2 {
   padding-left: 1rem;
   color: #ff004c;
   margin-bottom: 1.5rem;
+}
+
+h3 {
+  color: violet;
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
 }
 
 .project-card {
@@ -49,9 +55,28 @@ h2 {
   border-color: violet;
 }
 
-.contact p {
+.contact p,
+.skills ul li,
+.soft-skills ul li,
+.experience ul li,
+.education p {
   margin: 0.5rem 0;
   color: #ccc;
+}
+
+ul {
+  list-style-type: square;
+  margin-left: 2rem;
+  padding-left: 1rem;
+}
+
+a {
+  color: violet;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
 }
 
 footer {
@@ -73,4 +98,4 @@ footer {
   h1 {
     font-size: 1.2rem;
   }
-} 
+}
